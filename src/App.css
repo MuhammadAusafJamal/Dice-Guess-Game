@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  gap: 5px;
+  margin: 60px 129px 60px 50px;
+  max-width: 1182px;
+}
+
+.img_container {
+  width: 649px;
+  height: 522px;
+}
+
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text-container h1 {
+  color: #000;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-container button {
+  color: #FFF;
+  font-size: 17px;
+  width: 220px;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #000;
+  cursor: pointer;
+  transition: 0.4s background ease-in;
+}
+
+.text-container button:hover {
+  color: #000;
+  font-size: 17px;
+  background: #FFF;
+  cursor: pointer;
+  transition: 0.2s background ease-in;
+}
+
+
+/* TOTAL SCORE COMPONENT */
+
+.point {
+  text-align: center;
+  max-width: 200px;
+  /* background-color: aqua; */
+}
+
+.point h1 {
+  font-size: 100px;
+  line-height: 100px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.point p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
+/* DICE SELECTOR COMPONENT */
+
+.dice {
+  display: flex;
+  margin: 24px;
+  gap: 24px;
+}
+
+.di {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.di p {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+/* Play.JS PAGE */
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+
+
+
+/* DICEROLL COMPONENT */
+
+.dicecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+
+}
+
+
+.diceimg {
+  cursor: pointer;
+}
+
+
+.dicecontainer p {
+  font-size: 24px;
+
+
+}
+
+.dicecontainer button {
+  margin: 18px;
+}
+
+.dicecontainer .btn2 {
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 600;
+  width: 220px;
+  font-family: 'Poppins', sans-serif;
+
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #000;
+  cursor: pointer;
+  transition: 0.4s background ease-in;
+}
+
+.dicecontainer .btn2:hover {
+  color: #000;
+  font-size: 17px;
+  background: #FFF;
+  cursor: pointer;
+  transition: 0.2s background ease-in;
+}
+
+
+.dicecontainer .btn1 {
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 17px;
+  font-weight: 600;
+  width: 220px;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #FFF;
+  cursor: pointer;
+  transition: 0.4s background ease-in;
+}
+
+.dicecontainer .btn1:hover {
+  color: #FFF;
+  font-size: 17px;
+  background: #000;
+  cursor: pointer;
+  transition: 0.2s background ease-in;
+}
+
+
+
+/* SHOW RULES COMPONENT */
+
+.show {
+  background: #fbf1f1;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.show h2 {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.rule {
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+
+/* HOME PAGE RESPONSIVE */
+
+@media only screen and (max-width: 950px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    /* gap: -100px; */
+    /* background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    font-family: 'Poppins', sans-serif;
+    gap: 5px;
+    /* margin: 60px 129px 60px 50px; */
+    /* max-width: 1182px;  */
+  }
+
+  .img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 400px;
+    height: 400px;
+  }
+
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container h1 {
+    color: #000;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* background-color: #000; */
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    /* gap: -100px; */
+    /* background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    font-family: 'Poppins', sans-serif;
+    gap: 5px;
+    /* margin: 60px 129px 60px 50px; */
+    /* max-width: 1182px;  */
+  }
+
+  .img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-c ontainer h1 {
+    color: #000;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* background-color: #000; */
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    gap: 5px;
+  }
+
+  .img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container h1 {
+    color: #000;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* background-color: #000; */
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    gap: 5px;
+  }
+
+  .img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .img_container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    width: 200px;
+    height: 200px;
+  }
+
+
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+
+  .text-container h1 {
+    color: #000;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: normal; */
+    /* background-color: #000; */
+  }
+}
+
+
+/* PLAY PAGE RESPONSIVE */
+
+
+@media only screen and (max-width: 800px) {
+  /* TOTAL SCORE COMPONENT */
+
+  .point {
+    text-align: center;
+    max-width: 100px;
+    /* background-color: aqua; */
+  }
+
+  .point h1 {
+    font-size: 70px;
+    /* line-height: 100px; */
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .point p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+
+  /* DICE SELECTOR COMPONENT */
+
+  .dice {
+    display: flex;
+    margin: 24px;
+    gap: 24px;
+  }
+
+  .di {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .di p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+
+
+  /* Play.JS PAGE */
+
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  /* TOTAL SCORE COMPONENT */
+
+  .point {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: flex-start; */
+    /* display: none; */
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .point h1 {
+    font-size: 50px;
+    /* line-height: 100px; */
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .point p {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+
+  /* DICE SELECTOR COMPONENT */
+
+  .dice {
+    display: flex;
+    margin: 24px;
+    gap: 24px;
+    width: 400px;
+  }
+
+  .di {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .di p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+
+
+  /* Play.JS PAGE */
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .dicecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+
+  }
+
+
+  .diceimg img {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+  }
+
+
+  .dicecontainer p {
+    font-size: 24px;
+
+
+  }
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+  /* DICE SELECTOR COMPONENT */
+
+  .dice {
+    display: flex;
+    margin: 24px;
+    gap: 24px;
+    width: 350px;
+    /* height: 350px; */
+  }
+
+  .di {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .di p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+
+
+  /* DICE SELECTOR COMPONENT */
+
+  .dice {
+    display: flex;
+    margin: 24px;
+    gap: 24px;
+    width: 300px;
+    /* height: 350px; */
+  }
+
+  .di {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .di p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+}
