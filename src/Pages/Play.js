@@ -13,27 +13,28 @@ function Play({ score, setScore }) {
     const [selected, setSelected] = useState();
     const [error, setError] = useState();
 
-
+const generateRandomNumber = (min, max) => {
+        return Math.floor(Math.random() * (max - min) + min);
+    };
 
     const update = () => {
         if (!selected) {
-            return (
-                setError("You have not selected any number")
-            )
+            setError("You have not selected any number");
+            return;
         }
-        setCurrentDice(Math.floor(Math.random() * 6))
 
+        const randomNumber = generateRandomNumber(1, 7);
+        setCurrentDice((prev) => randomNumber); //Check
 
-        if (selected === currentDice + 1) {
-            setScore((score) => score + selected)
-            console.log("done")
+        if (selected === randomNumber) {
+            setScore((score) => score + randomNumber);
         } else {
-            setScore((score) => score - 2)
-            console.log("gaya")
+            setScore((score) => score - 2);
         }
         setSelected();
-    }
-
+        console.log("selected", selected)
+        console.log("randomNumber", randomNumber)
+    };
 
 
 
